@@ -6,6 +6,9 @@ import {Row, Col, Form, Button} from 'react-bootstrap';
 export class sellFish extends React.Component {
     constructor(props) {
         super();
+        this.state={
+            fishCounter:1,
+        }
     }
 
     render() {

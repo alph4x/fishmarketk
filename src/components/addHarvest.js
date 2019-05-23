@@ -1,20 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
-export class addHarvest extends React.Component{
-    constructor(props){
+import {Row, Col, Button} from 'react-bootstrap';
+
+export class addHarvest extends React.Component {
+    constructor(props) {
         super();
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <Link to='/addToExisting'>
-                    Add to existing fish stock
-                </Link>
-                <Link to='/addToNew'>
-                    Add new fish types
-                </Link>
+                <br/><br/>
+                <Row>
+                    <Button variant='outline-dark' size='lg' block="block">
+                        <Link to='/addToExisting'>
+                            Add to existing fish stock
+                        </Link>
+                    </Button>
+                </Row>
+                <br/><br/>
+                <Row>
+                    <Button variant='outline-dark' size='lg' block="block">
+                        <Link to='/addToNew'>
+                            Add new fish types
+                        </Link>
+                    </Button>
+                </Row>
             </div>
         )
     }
